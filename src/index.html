@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Calculator - 공학용 계산기</title>
+    <meta name="description" content="TDD와 SOLID 원칙으로 개발된 공학용 계산기 웹앱">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "key-func": "#232f48",
+                        "key-num": "#1a2332",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans KR", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+
+  <script type="module" crossorigin src="../assets/main-CDwolpfp.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/main-BqzN4inr.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center font-display">
+    <div class="text-center p-8">
+        <h1 class="text-6xl font-bold text-slate-900 dark:text-white mb-4">
+            🧮
+        </h1>
+        <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-2">
+            Engineering Calculator
+        </h2>
+        <p class="text-xl text-slate-600 dark:text-slate-400 mb-8">
+            공학용 계산기 웹앱
+        </p>
+        <div class="space-y-4">
+            <p class="text-slate-700 dark:text-slate-300">
+                ✅ Test-Driven Development
+            </p>
+            <p class="text-slate-700 dark:text-slate-300">
+                ✅ SOLID Principles
+            </p>
+            <p class="text-slate-700 dark:text-slate-300">
+                ✅ Clean Architecture
+            </p>
+        </div>
+        <div class="mt-12">
+            <p class="text-sm text-slate-500 dark:text-slate-500">
+                프로젝트 초기 설정 완료 ✓
+            </p>
+            <p class="text-sm text-slate-500 dark:text-slate-500 mt-2">
+                다음: Phase 2 - 코어 로직 구현 (TDD)
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
