@@ -13,9 +13,9 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, 'src/index.html'),
-        history: path.resolve(__dirname, 'src/history.html'),
-        converter: path.resolve(__dirname, 'src/converter.html')
+        main: path.resolve(__dirname, 'index.html'),
+        history: path.resolve(__dirname, 'history.html'),
+        converter: path.resolve(__dirname, 'converter.html')
       },
       output: {
         assetFileNames: 'assets/[name]-[hash][extname]',
