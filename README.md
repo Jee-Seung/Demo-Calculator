@@ -271,42 +271,42 @@ const testManager = new HistoryManager(new MockStorage());
 
 ```
 Demo-Calculator/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml        # CI/CD 파이프라인
 ├── docs/                      # 📚 프로젝트 문서
 │   ├── PRD.md                # 제품 요구사항 정의서
 │   ├── TechSpec.md           # 기술 명세서
 │   ├── TASKS.md              # 세부 작업 계획
 │   ├── design/               # UI 디자인 참고
+│   │   ├── calculator.html
+│   │   ├── calculator.png
+│   │   ├── history.html
+│   │   ├── history.png
+│   │   ├── unit-converter.html
+│   │   └── unit-converter.png
 │   └── dev-rules/            # 개발 규칙
 │       ├── tdd.md           # TDD 가이드라인
-│       └── solid.md         # SOLID 원칙 적용
-├── src/                       # 💻 소스 코드
+│       └── solid.md         # SOLID 원칙
+├── src/                       # 💻 소스 코드 (Phase 2에서 구현 예정)
 │   ├── scripts/
-│   │   ├── calculator/       # 계산기 모듈 (TDD)
-│   │   │   ├── MathEngine.js
-│   │   │   ├── CalculatorState.js
-│   │   │   ├── Display.js
-│   │   │   └── Keypad.js
-│   │   ├── history/          # 기록 모듈 (TDD)
-│   │   │   ├── HistoryManager.js
-│   │   │   └── HistoryView.js
-│   │   ├── converter/        # 단위 변환 모듈 (TDD)
-│   │   │   ├── UnitConverter.js
-│   │   │   └── ConversionRates.js
-│   │   ├── storage/          # 저장소 모듈 (DIP)
-│   │   │   ├── StorageInterface.js
-│   │   │   └── LocalStorageImpl.js
-│   │   └── utils/            # 유틸리티 (TDD)
-│   │       ├── validators.js
-│   │       └── formatters.js
-│   ├── styles/
-│   └── index.html
+│   │   └── main.js           # 메인 진입점
+│   └── styles/
+│       └── main.css          # 기본 스타일
 ├── tests/                     # 🧪 테스트 코드
-│   ├── unit/                 # 단위 테스트
-│   └── integration/          # 통합 테스트
-├── .github/workflows/        # 🚀 CI/CD 파이프라인
-│   └── deploy.yml
+│   └── unit/
+│       └── setup.test.js     # 샘플 테스트
+├── index.html                 # 계산기 메인 페이지
+├── history.html               # 기록 페이지
+├── converter.html             # 단위 변환 페이지
+├── package.json
+├── vite.config.js
+├── .gitignore
 └── README.md
 ```
+
+> **참고**: Phase 1 (프로젝트 초기 설정)이 완료되었습니다.  
+> Phase 2부터 코어 로직 모듈(calculator, history, converter, storage, utils)이 추가될 예정입니다.
 
 ---
 
