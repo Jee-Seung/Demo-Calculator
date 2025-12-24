@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
-  root: 'src',
   base: './',
   resolve: {
     alias: {
@@ -10,7 +9,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {
@@ -22,11 +21,13 @@ export default defineConfig({
   },
   server: {
     port: 5173,
-    open: true
+    open: true,
+    root: 'src'
   },
   test: {
     globals: true,
     environment: 'jsdom',
+    include: ['tests/**/*.test.js', 'tests/**/*.spec.js'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
