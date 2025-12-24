@@ -16,6 +16,11 @@ export default defineConfig({
         main: path.resolve(__dirname, 'src/index.html'),
         history: path.resolve(__dirname, 'src/history.html'),
         converter: path.resolve(__dirname, 'src/converter.html')
+      },
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js'
       }
     }
   },
